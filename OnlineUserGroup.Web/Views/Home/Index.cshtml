@@ -1,0 +1,13 @@
+﻿@model OnlineUserGroup.Web.Models.Appointment
+           
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>@ViewBag.Foo</h2>
+
+Titel: @Model.Title<br />
+@Html.TextBoxFor(m => m.Description)
+Beschreibung: @Model.Description<br />
+Datum: @Model.Date.ToShortDateString()<br />
+Uhrzeit: @Model.Date.ToShortTimeString()<br />
